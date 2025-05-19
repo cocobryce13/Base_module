@@ -1,0 +1,5 @@
+.vs/
+Debug/
+Realise/
+*.vcxproj.user
+**/out/.
