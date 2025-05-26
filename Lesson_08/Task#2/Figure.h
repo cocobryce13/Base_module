@@ -8,12 +8,14 @@ class Invalid_figure : public std::domain_error
     Invalid_figure(const std::string message) : std::domain_error(message) {};
 };
 
-class Figure {
+class Figure 
+{
 public:
     virtual void print() = 0;
 };
 
-class Triangle : public Figure {
+class Triangle : public Figure 
+{
 public:
     Triangle(int a, int b, int c, int A, int B, int C);
     void print() override;
@@ -26,7 +28,8 @@ protected:
     int A, B, C;
 };
 
-class Right_triangle : public Triangle {
+class Right_triangle : public Triangle 
+{
 public:
     Right_triangle(int a, int b, int c, int A, int B);
     void print() override;
@@ -36,7 +39,8 @@ private:
     const int C = 90;
 };
 
-class Isosceles_triangle : public Triangle {
+class Isosceles_triangle : public Triangle 
+{
 public:
     Isosceles_triangle(int a, int b, int A, int B);
     void print() override;
@@ -45,7 +49,8 @@ private:
     std::string figure = "Isosceles_triangle: ";
 };
 
-class Equilateral_triangle : public Triangle {
+class Equilateral_triangle : public Triangle 
+{
 public:
     Equilateral_triangle(int a);
     void print() override;
@@ -54,7 +59,8 @@ private:
     std::string figure = "Equilateral_triangle: ";
 };
 
-class Quadrangle : public Figure {
+class Quadrangle : public Figure 
+{
 public:
     Quadrangle(int a, int b, int c, int d, int A, int B, int C, int D);
     void print() override;
@@ -67,7 +73,8 @@ protected:
     int A, B, C, D;
 };
 
-class Parallelogram : public Quadrangle {
+class Parallelogram : public Quadrangle 
+{
 public:
     Parallelogram(int a, int b, int A, int B);
     void print() override;
@@ -76,7 +83,8 @@ private:
     std::string figure = "Parallelogram: ";
 };
 
-class Rectangle : public Parallelogram {
+class Rectangle : public Parallelogram 
+{
 public:
     Rectangle(int a, int b);
     void print() override;
@@ -85,7 +93,8 @@ private:
     std::string figure = "Rectangle: ";
 };
 
-class Rhombus : public Parallelogram {
+class Rhombus : public Parallelogram 
+{
 public:
     Rhombus(int a, int A, int B);
     void print() override;
@@ -94,7 +103,8 @@ private:
     std::string figure = "Rhombus: ";
 };
 
-class Square : public Rhombus {
+class Square : public Rhombus 
+{
 public:
     Square(int a);
     void print() override;
