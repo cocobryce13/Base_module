@@ -6,7 +6,7 @@ int main()
 {
     try
     {
-        Triangle triangle(10, 20, 30, 30, 90, 90); // Треугольник
+        Triangle triangle(10, 20, 30, 30, 90, 90); // РўСЂРµСѓРіРѕР»СЊРЅРёРє
         triangle.print();
     }
     catch (const char* message)
@@ -14,28 +14,28 @@ int main()
         std::cout << message;
     }
 
-    Right_triangle right_triangle(10, 20, 30, 30, 50); // Прямоугольный треугольник
+    Right_triangle right_triangle(10, 20, 30, 30, 50); // РџСЂСЏРјРѕСѓРіРѕР»СЊРЅС‹Р№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє
     right_triangle.print();
 
-    Isosceles_triangle isosceles_triangle(60, 60, 60, 60); // Равнобедренный треугольник
+    Isosceles_triangle isosceles_triangle(60, 60, 60, 60); // Р Р°РІРЅРѕР±РµРґСЂРµРЅРЅС‹Р№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє
     isosceles_triangle.print();
 
-    Equilateral_triangle equilateral_triangle(60); // Равносторонний треугольник
+    Equilateral_triangle equilateral_triangle(60); // Р Р°РІРЅРѕСЃС‚РѕСЂРѕРЅРЅРёР№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє
     equilateral_triangle.print();
 
-    Quadrangle quadrangle(70, 100, 70, 100, 70, 110, 70, 110); // Четырёхугольник
+    Quadrangle quadrangle(70, 100, 70, 100, 70, 110, 70, 110); // Р§РµС‚С‹СЂС‘С…СѓРіРѕР»СЊРЅРёРє
     quadrangle.print();
 
-    Rectangle rectangle(30, 70); // Прямоугольник
+    Rectangle rectangle(30, 70); // РџСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє
     rectangle.print();
 
-    Square square(10); // Квадрат
+    Square square(10); // РљРІР°РґСЂР°С‚
     square.print();
 
-    Parallelogram parallelogram(10, 50, 60, 30); // Параллелограмм
+    Parallelogram parallelogram(10, 50, 60, 30); // РџР°СЂР°Р»Р»РµР»РѕРіСЂР°РјРј
     parallelogram.print();
 
-    Rhombus rhombus(10, 60, 30); // Ромб
+    Rhombus rhombus(10, 60, 30); // Р РѕРјР±
     rhombus.print();
 
     std::cout << "\n\n\n";

@@ -2,7 +2,7 @@
 #include "Figure.h"
 
 
-// Òğåóãîëüíèê
+// Ğ¢Ñ€ĞµÑƒĞ³Ğ¾Ğ»ÑŒĞ½Ğ¸Ğº
 Triangle::Triangle(int a, int b, int c, int A, int B, int C) : a(a), b(b), c(c), A(A), B(B), C(C) {}
 void Triangle::print()
 {
@@ -13,13 +13,13 @@ void Triangle::print()
     if (!((A + B + C) > 180))
     {
         std::cout << angles << A << " " << B << " " << C << std::endl;
-        throw std::runtime_error("Îøèáêà!");
+        throw std::runtime_error("ĞÑˆĞ¸Ğ±ĞºĞ°!");
     }
     std::cout << std::endl;
 
 }
 
-// Ïğÿìîóãîëüíûé òğåóãîëüíèê
+// ĞŸÑ€ÑĞ¼Ğ¾ÑƒĞ³Ğ¾Ğ»ÑŒĞ½Ñ‹Ğ¹ Ñ‚Ñ€ĞµÑƒĞ³Ğ¾Ğ»ÑŒĞ½Ğ¸Ğº
 Right_triangle::Right_triangle(int a, int b, int c, int A, int B) : Triangle(a, b, c, A, B, 90) {}
 void Right_triangle::print()
 {
@@ -28,7 +28,7 @@ void Right_triangle::print()
     std::cout << std::endl;
 }
 
-// Ğàâíîáåäğåííûé òğåóãîëüíèê
+// Ğ Ğ°Ğ²Ğ½Ğ¾Ğ±ĞµĞ´Ñ€ĞµĞ½Ğ½Ñ‹Ğ¹ Ñ‚Ñ€ĞµÑƒĞ³Ğ¾Ğ»ÑŒĞ½Ğ¸Ğº
 Isosceles_triangle::Isosceles_triangle(int a, int b, int A, int B) : Triangle(a, b, a, A, B, A) {}
 void Isosceles_triangle::print()
 {
@@ -37,7 +37,7 @@ void Isosceles_triangle::print()
     std::cout << std::endl;
 }
 
-// Ğàâíîñòîğîííèé òğåóãîëüíèê
+// Ğ Ğ°Ğ²Ğ½Ğ¾ÑÑ‚Ğ¾Ñ€Ğ¾Ğ½Ğ½Ğ¸Ğ¹ Ñ‚Ñ€ĞµÑƒĞ³Ğ¾Ğ»ÑŒĞ½Ğ¸Ğº
 Equilateral_triangle::Equilateral_triangle(int a) : Triangle(a, a, a, 60, 60, 60) {}
 void Equilateral_triangle::print()
 {
@@ -46,7 +46,7 @@ void Equilateral_triangle::print()
     std::cout << std::endl;
 }
 
-// ×åòûğ¸õóãîëüíèê
+// Ğ§ĞµÑ‚Ñ‹Ñ€Ñ‘Ñ…ÑƒĞ³Ğ¾Ğ»ÑŒĞ½Ğ¸Ğº
 Quadrangle::Quadrangle(int a, int b, int c, int d, int A, int B, int C, int D) : a(a), b(b), c(c), d(d), A(A), B(B), C(C), D(D) {}
 void Quadrangle::print()
 {
@@ -55,7 +55,7 @@ void Quadrangle::print()
     std::cout << std::endl;
 }
 
-// Ïàğàëëåëîãğàìì
+// ĞŸĞ°Ñ€Ğ°Ğ»Ğ»ĞµĞ»Ğ¾Ğ³Ñ€Ğ°Ğ¼Ğ¼
 Parallelogram::Parallelogram(int a, int b, int A, int B) : Quadrangle(a, b, a, b, A, B, A, B) {}
 void Parallelogram::print()
 {
@@ -64,7 +64,7 @@ void Parallelogram::print()
     std::cout << std::endl;
 }
 
-// Ïğÿìîóãîëüíèê
+// ĞŸÑ€ÑĞ¼Ğ¾ÑƒĞ³Ğ¾Ğ»ÑŒĞ½Ğ¸Ğº
 Rectangle::Rectangle(int a, int b) : Parallelogram(a, b, 90, 90) {}
 void Rectangle::print()
 {
@@ -73,7 +73,7 @@ void Rectangle::print()
     std::cout << std::endl;
 }
 
-// Ğîìá
+// Ğ Ğ¾Ğ¼Ğ±
 Rhombus::Rhombus(int a, int A, int B) : Parallelogram(a, a, A, B) {}
 void Rhombus::print()
 {
@@ -82,7 +82,7 @@ void Rhombus::print()
     std::cout << std::endl;
 }
 
-// Êâàäğàò
+// ĞšĞ²Ğ°Ğ´Ñ€Ğ°Ñ‚
 Square::Square(int a) : Rhombus(a, 90, 90) {}
 void Square::print()
 {
