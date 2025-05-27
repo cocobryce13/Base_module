@@ -3,3 +3,4 @@ Debug/
 Realise/
 *.vcxproj.user
 **/out/.
+*.vcxproj
